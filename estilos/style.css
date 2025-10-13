@@ -29,6 +29,7 @@ body {
   color: var(--texto);
 }
 
+
 header {
   background-color: var(--destaque);
   color: var(--texto);
@@ -56,6 +57,15 @@ nav#menu a{
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+}
+
+.construcao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 10vh;  
+  border: 2px solid #ffffff;
 }
 
 main {
