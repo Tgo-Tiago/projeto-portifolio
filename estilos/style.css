@@ -31,12 +31,15 @@ body {
 
 
 header {
-  background-color: var(--destaque);
-  color: var(--texto);
-  padding: 10px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav#menu ul {
@@ -57,15 +60,6 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
-}
-
-.construcao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-  height: 10vh;
-  border: 2px solid #ffffff;
 }
 
 main {
@@ -264,7 +258,7 @@ footer a {
 
 footer a:hover {
   color: var(--destaque-inverso);
-  
+
 }
 
 @media screen and (min-width: 768px) {
@@ -272,7 +266,7 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  #projeto-container .projeto{
+  #projeto-container .projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
